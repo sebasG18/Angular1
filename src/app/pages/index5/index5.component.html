@@ -14,29 +14,29 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mx-auto navbar-center" id="mySidenav">
           <li class="nav-item" [ngClass]="{'active':currentSection === 'home'}">
-            <a href="javascript: void(0);" [ngxScrollTo]="'#home'" class="nav-link">Home</a>
+            <a href="javascript: void(0);" [ngxScrollTo]="'#home'" class="nav-link">Hogar</a>
           </li>
           <li class="nav-item" [ngClass]="{'active':currentSection === 'features'}">
-            <a href="javascript: void(0);" [ngxScrollTo]="'#features'" class="nav-link">Features</a>
+            <a href="javascript: void(0);" [ngxScrollTo]="'#features'" class="nav-link">Características</a>
           </li>
           <li class="nav-item" [ngClass]="{'active':currentSection === 'pricing'}">
             <a href="javascript: void(0);" [ngxScrollTo]="'#pricing'" class="nav-link"
-              [ngxScrollToOffset]="5">Pricing</a>
+              [ngxScrollToOffset]="5">Precios</a>
           </li>
           <li class="nav-item" [ngClass]="{'active':currentSection === 'blog'}">
             <a href="javascript: void(0);" [ngxScrollTo]="'#blog'" class="nav-link" [ngxScrollToOffset]="5">Blog</a>
           </li>
           <li class="nav-item" [ngClass]="{'active':currentSection === 'contact'}">
-            <a href="javascript: void(0);" [ngxScrollTo]="'#contact'" class="nav-link" [ngxScrollToOffset]="5">Contact
+            <a href="javascript: void(0);" [ngxScrollTo]="'#contact'" class="nav-link" [ngxScrollToOffset]="5">Contactos
               Us</a>
           </li>
         </ul>
         <ul class="navbar-nav navbar-center">
           <li class="nav-item">
-            <a href="javascript: void(0);" class="nav-link" (click)="loginModal(content)">Login</a>
+            <a href="javascript: void(0);" class="nav-link" (click)="loginModal(content)">Acceso</a>
           </li>
           <li class="nav-item">
-            <a href="javascript: void(0);" class="nav-link" (click)="registerModal(registercontent)">Register</a>
+            <a href="javascript: void(0);" class="nav-link" (click)="registerModal(registercontent)">Registro</a>
           </li>
         </ul>
       </div>
@@ -87,23 +87,23 @@
   <ng-template #content let-c="close" let-d="dismiss">
     <div class="modal-body">
       <div class="text-center">
-        <h3 class="title mb-4">Welcome To Lezir</h3>
+        <h3 class="title mb-4">Bienvenidos a Lezir</h3>
         <h4 class="text-uppercase text-primary"><b>Login</b></h4>
       </div>
       <div class="login-form mt-4">
         <form>
           <div class="form-group">
-            <label for="exampleInputEmail1">Username / Email</label>
+            <label for="exampleInputEmail1">Usuario / Correo</label>
             <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Youremail@gmail.com">
           </div>
           <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
+            <label for="exampleInputPassword1">Contraseña</label>
             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
           </div>
-          <a href="javascript: void(0);" class="float-end text-muted font-size-15">Forgot Password.?</a>
+          <a href="javascript: void(0);" class="float-end text-muted font-size-15">Haz olvidado tu contraseña.?</a>
           <div class="custom-control custom-checkbox">
             <input type="checkbox" class="custom-control-input" id="customCheck1">
-            <label class="custom-control-label font-size-15" for="customCheck1">Remember Me</label>
+            <label class="custom-control-label font-size-15" for="customCheck1">Acuerdate de mí</label>
           </div>
           <div class="text-center mt-4">
             <button type="submit" class="btn btn-primary">Login <i-feather class="icon-size-15 icon ms-1"
@@ -129,7 +129,7 @@
                 <i-feather class="icon-xs" name="linkedin"></i-feather>
               </a></li>
           </ul>
-          <p class="text-muted mb-0">New User? <a href="javascript: void(0);" class="text-primary">Signup</a></p>
+          <p class="text-muted mb-0">Nuevo Usuario? <a href="javascript: void(0);" class="text-primary">Signup</a></p>
         </div>
       </div>
     </div>
@@ -138,7 +138,7 @@
   <ng-template #registercontent let-c="close" let-d="dismiss">
     <div class="modal-body">
       <div class="text-center">
-        <h3 class="title mb-4">Welcome To Lezir</h3>
+        <h3 class="title mb-4">Bienvenidos a Lezir</h3>
         <h4 class="text-uppercase text-primary"><b>Register</b></h4>
       </div>
       <div class="login-form mt-4">
